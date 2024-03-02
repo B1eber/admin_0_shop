@@ -1,0 +1,45 @@
+<%- include('../_layouts/adminheader.ejs') %>
+
+<h2 class="page-title">Edit a page</h2>
+<a href="/admin/pages" class="btn btn-primary mx-2">Back to all pages</a>
+<br /><br />
+
+<form method="post" action="/admin/pages/edit_pages/<%= id %>">
+  <div class="form-group">
+    <label for="">Title</lable>
+    <input
+      type="text"
+      class="form-control"
+      name="title"
+      value="<%=title %>"
+      placeholder="Title"
+    />
+  </div>
+  <div class="form-group">
+    <lable for="">Slug</lable>
+    <input
+      type="text"
+      class="form-control"
+      name="slug"
+      value="<%= slug %>"
+      placholder="Slug"
+    />
+  </div>
+  <div class="form-group">
+    <lable for="">Content</lable>
+    <textarea
+      type="text"
+      class="form-control"
+      id="ta"
+      name="content"
+      cols="30"
+      rows="10"
+      placeholder="Content"
+    >
+<%= content %></textarea
+    >
+  </div>
+  <button class="btn btn-primary mx-2">Submit</button>
+</form>
+
+<%- include('../_layouts/adminfooter.ejs') %>

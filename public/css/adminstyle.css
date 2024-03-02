@@ -1,0 +1,55 @@
+body {
+  margin-left: 7%;
+  margin-right: 7%;
+  border: 1px solid #ccc; /* Рамка вокруг страницы */
+}
+
+.sorting tr:not(.home) {
+  cursor: pointer;
+}
+
+.ui-state-highlight {
+  border: 1px dashed #ccc;
+}
+
+#imgPreview {
+  margin: 20px;
+}
+
+.navbar {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.page-title {
+  margin-right: 10px;
+}
+
+.h2 {
+  margin: 10px;
+}
+
+.form-group {
+  margin: 2%;
+  margin-bottom: 2%;
+}
+
+.name-input {
+  margin-top: 5px;
+}
+
+.footer_word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#noimage {
+  width: 100px;
+  height: 100px;
+}
+
+.deleting-image {
+  width: 100px;
+  height: 100px;
+}
